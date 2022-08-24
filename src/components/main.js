@@ -1,18 +1,27 @@
-import App from "../App"
-export default function Main(props){
-    
-    {
-        const nums =[1,2,3,4,5,6]
-        nums.map((num)=>{
-        
-        const numSquared=num*num
-        console.log(numSquared);
-    })}
+import { react } from "react";
+import "./main.css"
+export default function Main(){
     return(
-          <div className="app--main">
-            <h3> Setup:{props.setup}</h3>
-            <h4><b>punchline:</b>{props.punchline}</h4>
-            <hr/>
-          </div>
+        <main className="app--wrapper"> 
+            <form className="app--form">
+                  <nav className="input--info">
+                     <input type="text" 
+                            className="form--input"   
+                            
+                     />
+                     <input type="text" 
+                            className="form--input"  
+                            placeholder="enter some words"
+                     />
+                   <nav className="button--info">
+                            <button className="form--button">
+                              Get a new meme image
+                            </button>
+                   </nav>
+                  </nav>
+            </form>
+        
+        </main>
     )
+
 }

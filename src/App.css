@@ -1,82 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
  
 }
 body{
-     background: #232a23;
-     font-family: 'Oxygen',sans-serif;
+    background:#282D35;
+    height: 100vh;
+    width: 100vw;
 }
-.app--header{
-     display: flex;
-     align-items: center;
-     /* padding: 20px; */
-     padding-right: 0;
-     background: whitesmoke;
-     position: fixed;
-     height: 80px;
-     width: 100%;
-     top: 0;
-     padding-top: 20px;
-     padding-bottom: 20px;
-    
-}
-.app--logo{
-     height: 90px;
-     margin-left: 10px;
-     
-}
-.app--header>.app--title{
-     margin: 0 auto;
-     color: crimson;
-}
-.app--main{
-     /* margin-top: 50px; */
-     top: 50px;
-    font-size: 18px;
-    color: #61dab6;
-    padding: 20px;
-
-}
-h2{
-     margin-top: 50px;
-}
-.app--main>h4{
-     margin-top: 5px;
-     padding: 10px;
-}
-.app--footer{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: grey;
-    height: 140px;
-    flex-wrap: wrap;
-   
-
-}
-.footer--info{ 
-     display: flex;
-     flex-direction: row;
-     color:crimson;
-}
-.footer--info >h3{
-     margin-left:160px;
-}
- .app--contact-logos{
-     display:flex;
-     flex-direction:row;
-     align-items: center;
-     margin-left:25%;
-     /* margin-right: auto; */
-     margin-bottom: 10px;
-     /* flex-wrap: wrap; */
-     margin-top: 2px;
-     color: #61dab6;
-     
-}
-
-
-.contact--logos{
-     height:40px;
-}
+ 
