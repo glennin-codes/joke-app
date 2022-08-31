@@ -1,27 +1,23 @@
-import { react } from "react";
+import Count from "./count";
+import React from "react"
 import "./main.css"
 export default function Main(){
+  const [count , setCount]= React.useState(0)
+    function add () {
+           setCount(prevCount=>prevCount+1)
+    }
+    function subtract(){
+        setCount(prevCount=> prevCount-1)
+    }
     return(
         <main className="app--wrapper"> 
-            <form className="app--form">
-                  <nav className="input--info">
-                     <input type="text" 
-                            className="form--input"   
-                            
-                     />
-                     <input type="text" 
-                            className="form--input"  
-                            placeholder="enter some words"
-                     />
-                   <nav className="button--info">
-                            <button className="form--button">
-                              Get a new meme image
-                            </button>
-                   </nav>
-                  </nav>
-            </form>
-        
+            <div className="counter">
+               <button className="counter--minus"  onClick={subtract}>-</button>
+                <Count number={count}/>
+               <button className="counter--plus" onClick={add}>+</button>
+            </div>
         </main>
+    
     )
 
 }
