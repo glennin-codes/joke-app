@@ -1,0 +1,23 @@
+.app--wrapper *{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    
+   
+}
+.optimum *{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    display: inline-block;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    
+    
+}
